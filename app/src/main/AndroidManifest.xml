@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wookes.tac"
+    android:installLocation="preferExternal">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!--自动更新URI跳转安装时需要-->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <application
+        android:name=".MultiApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ui.Splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.VerifyOtp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SignupUsername"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SignupNamePasswordGender"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SignupPhone"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.VideoPlayer"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".ui.Post"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.Hashtag"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.LandingUi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.b.ExploreVideo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.Search"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.EditProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ProfilePhoto"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.FollowingFollowers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SettingsOp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AddProfilePhoto"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.forgot.password.UsernamePhoneFlow"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.forgot.password.UpdatePasswordFlow"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.MusicUi"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.Balance" />
+        <activity android:name=".ui.Creator" />
+        <activity android:name=".ui.UserProfile" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9350254166586365~9234675852" />
+        <service
+            android:name=".notifications.FirebaseInstance"
+            android:exported="false"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

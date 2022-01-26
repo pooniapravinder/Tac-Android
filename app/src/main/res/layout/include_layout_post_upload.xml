@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.wookes.tac.custom.RoundRectCornerImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/about"
+        android:scaleType="centerCrop"
+        app:corner_radius="14" />
+
+    <TextView
+        android:id="@+id/progress"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignStart="@+id/thumbnail"
+        android:layout_alignEnd="@+id/thumbnail"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="10sp" />
+</RelativeLayout>

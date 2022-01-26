@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/custom_shadow"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:paddingTop="@dimen/margin_40">
+
+            <ImageView
+                android:id="@+id/wooker_splash_logo"
+                android:layout_width="@dimen/margin_70"
+                android:layout_height="@dimen/margin_70"
+                android:contentDescription="@string/about"
+                app:srcCompat="@drawable/wookes_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_18"
+                android:layout_toEndOf="@+id/wooker_splash_logo"
+                android:text="@string/tac"
+                android:textColor="@color/colorGrey"
+                android:textSize="@dimen/textsize_20" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:gravity="center"
+            android:text="@string/add_profile_photo"
+            android:textColor="@color/colorBlackText"
+            android:textSize="@dimen/textsize_20" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_20"
+            android:contentDescription="@string/about"
+            app:srcCompat="@drawable/icon_profile_photo" />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_40"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/choose_profile_photo"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/textsize_12"
+            android:typeface="sans" />
+
+        <Button
+            android:id="@+id/skip"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_40"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_30"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/skip"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/textsize_12"
+            android:typeface="sans" />
+    </LinearLayout>
+</RelativeLayout>

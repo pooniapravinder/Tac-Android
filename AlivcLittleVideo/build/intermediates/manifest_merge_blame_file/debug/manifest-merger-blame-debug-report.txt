@@ -1,0 +1,102 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.aliyun.apsara.alivclittlevideo"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:5:5-79
+11-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:5:22-76
+12    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+12-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:6:5-76
+12-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:6:22-73
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:7:5-67
+13-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:7:22-64
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:8:5-81
+14-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:8:22-78
+15    <uses-permission android:name="android.permission.WAKE_LOCK" />
+15-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:9:5-68
+15-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:9:22-65
+16    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+16-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:10:5-75
+16-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:10:22-72
+17    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+17-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:11:5-73
+17-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:11:22-70
+18    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+18-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:12:5-80
+18-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:12:22-77
+19
+20    <application
+20-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:14:5-44:19
+21        android:allowBackup="true"
+21-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:15:9-35
+22        android:supportsRtl="true" >
+22-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:16:9-35
+23        <activity
+23-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:17:9-21:66
+24            android:name="com.aliyun.apsara.alivclittlevideo.activity.VideoListActivity"
+24-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:18:13-55
+25            android:launchMode="singleTask"
+25-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:19:13-44
+26            android:screenOrientation="portrait"
+26-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:20:13-49
+27            android:theme="@style/Theme.AppCompat.NoActionBar" />
+27-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:21:13-63
+28        <activity
+28-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:22:9-25:52
+29            android:name="com.aliyun.apsara.alivclittlevideo.activity.PublishActivity"
+29-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:23:13-53
+30            android:launchMode="singleTop"
+30-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:24:13-43
+31            android:screenOrientation="portrait" />
+31-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:25:13-49
+32        <activity
+32-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:26:9-29:66
+33            android:name="com.aliyun.apsara.alivclittlevideo.activity.AlivcLittleSettingActivity"
+33-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:27:13-64
+34            android:screenOrientation="portrait"
+34-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:28:13-49
+35            android:theme="@style/Theme.AppCompat.NoActionBar" />
+35-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:29:13-63
+36        <activity
+36-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:30:9-32:52
+37            android:name="com.aliyun.apsara.alivclittlevideo.activity.AlivcLittleUserSettingActivity"
+37-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:31:13-68
+38            android:screenOrientation="portrait" />
+38-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:32:13-49
+39        <activity
+39-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:33:9-35:52
+40            android:name="com.aliyun.apsara.alivclittlevideo.activity.AlivcLittleUserChangeActivity"
+40-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:34:13-67
+41            android:screenOrientation="portrait" />
+41-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:35:13-49
+42        <activity
+42-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:36:9-38:52
+43            android:name="com.aliyun.apsara.alivclittlevideo.activity.AlivcLittlePlayerActivity"
+43-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:37:13-63
+44            android:screenOrientation="portrait" />
+44-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:38:13-49
+45        <activity
+45-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:39:9-41:52
+46            android:name="com.aliyun.apsara.alivclittlevideo.activity.AlivcLittlePreviewActivity"
+46-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:40:13-64
+47            android:screenOrientation="portrait" />
+47-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:41:13-49
+48        <activity
+48-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:42:9-43:51
+49            android:name="com.aliyun.apsara.alivclittlevideo.activity.AlivcLittleLiveActivity"
+49-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:42:19-67
+50            android:screenOrientation="portrait" />
+50-->E:\a\MyApplication\AlivcLittleVideo\src\main\AndroidManifest.xml:43:13-49
+51    </application>
+52
+53</manifest>

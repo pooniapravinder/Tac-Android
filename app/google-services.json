@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "591675994343",
+    "firebase_url": "https://wookes-tac.firebaseio.com",
+    "project_id": "wookes-tac",
+    "storage_bucket": "wookes-tac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591675994343:android:78ce459a4b57c03c443242",
+        "android_client_info": {
+          "package_name": "com.wookes.tac"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "591675994343-m7vl2apu3ul9247k473sttekl5de06lr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCG1DHajVnVR4gGgsOannSA43hx9z230FY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "591675994343-m7vl2apu3ul9247k473sttekl5de06lr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

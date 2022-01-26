@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/margin_15"
+    android:paddingEnd="@dimen/margin_15">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_15">
+
+        <TextView
+            android:id="@+id/no_of_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/no_comments"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/close_dialog"
+            android:layout_width="@dimen/margin_18"
+            android:layout_height="@dimen/margin_18"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/about"
+            android:src="@drawable/icon_close_cross"
+            android:tint="@color/fadeGray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/comments_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/textsize_13"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomEditor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/reply_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <com.wookes.tac.custom.WookesTextView
+                    android:id="@+id/reply_to"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:gravity="start"
+                    android:importantForAutofill="no"
+                    android:padding="@dimen/margin_5"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/close_reply"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_gravity="center|end"
+                    android:contentDescription="@string/about"
+                    android:src="@drawable/icon_close_cross"
+                    android:tint="@color/fadeGray" />
+
+            </LinearLayout>
+
+            <com.wookes.tac.custom.WookesTextView
+                android:id="@+id/comment_to_reply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:importantForAutofill="no"
+                android:maxLines="1"
+                android:paddingStart="@dimen/margin_5"
+                android:paddingEnd="@dimen/margin_5"
+                android:paddingBottom="@dimen/margin_5"
+                android:textColor="@color/colorGrey"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/comment_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/post_comment"
+                android:background="@android:color/transparent"
+                android:completionThreshold="1"
+                android:dropDownWidth="match_parent"
+                android:gravity="start"
+                android:hint="@string/leave_comment"
+                android:imeOptions="actionSend"
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences"
+                android:maxLength="150"
+                android:dropDownAnchor="@id/recycler_view"
+                android:paddingTop="@dimen/margin_15"
+                android:paddingBottom="@dimen/margin_15"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/post_comment"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/about"
+                android:src="@drawable/icon_comment_post" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,61 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.aliyun.svideo.record" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="16"
+6-->E:\a\MyApplication\AliyunRecorder\record\src\main\AndroidManifest.xml
+7        android:targetSdkVersion="29" />
+7-->E:\a\MyApplication\AliyunRecorder\record\src\main\AndroidManifest.xml
+8
+9    <uses-permission android:name="android.permission.CAMERA" />
+9-->E:\a\MyApplication\AliyunRecorder\record\src\main\AndroidManifest.xml:5:5-65
+9-->E:\a\MyApplication\AliyunRecorder\record\src\main\AndroidManifest.xml:5:22-62
+10    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+10-->E:\a\MyApplication\AliyunRecorder\record\src\main\AndroidManifest.xml:6:5-71
+10-->E:\a\MyApplication\AliyunRecorder\record\src\main\AndroidManifest.xml:6:22-68
+11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+11-->E:\a\MyApplication\AliyunRecorder\record\src\main\AndroidManifest.xml:7:5-81
+11-->E:\a\MyApplication\AliyunRecorder\record\src\main\AndroidManifest.xml:7:22-78
+12
+13    <uses-feature
+13-->E:\a\MyApplication\AliyunRecorder\record\src\main\AndroidManifest.xml:9:5-11:35
+14        android:glEsVersion="0x00020000"
+14-->E:\a\MyApplication\AliyunRecorder\record\src\main\AndroidManifest.xml:10:9-41
+15        android:required="true" />
+15-->E:\a\MyApplication\AliyunRecorder\record\src\main\AndroidManifest.xml:11:9-32
+16
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->E:\a\MyApplication\AliyunRecorder\record\src\main\AndroidManifest.xml:13:5-67
+17-->E:\a\MyApplication\AliyunRecorder\record\src\main\AndroidManifest.xml:13:22-64
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->E:\a\MyApplication\AliyunRecorder\record\src\main\AndroidManifest.xml:14:5-79
+18-->E:\a\MyApplication\AliyunRecorder\record\src\main\AndroidManifest.xml:14:22-76
+19
+20    <application>
+20-->E:\a\MyApplication\AliyunRecorder\record\src\main\AndroidManifest.xml:16:5-27:19
+21        <activity
+21-->E:\a\MyApplication\AliyunRecorder\record\src\main\AndroidManifest.xml:18:9-21:57
+22            android:name="com.aliyun.svideo.recorder.activity.AlivcSvideoRecordActivity"
+22-->E:\a\MyApplication\AliyunRecorder\record\src\main\AndroidManifest.xml:19:13-89
+23            android:screenOrientation="portrait"
+23-->E:\a\MyApplication\AliyunRecorder\record\src\main\AndroidManifest.xml:20:13-49
+24            android:theme="@style/AlivcRecordUIStyle" />
+24-->E:\a\MyApplication\AliyunRecorder\record\src\main\AndroidManifest.xml:21:13-54
+25        <activity
+25-->E:\a\MyApplication\AliyunRecorder\record\src\main\AndroidManifest.xml:22:9-24:56
+26            android:name="com.aliyun.svideo.recorder.activity.AlivcSvideoMixRecordActivity"
+26-->E:\a\MyApplication\AliyunRecorder\record\src\main\AndroidManifest.xml:22:19-98
+27            android:screenOrientation="portrait"
+27-->E:\a\MyApplication\AliyunRecorder\record\src\main\AndroidManifest.xml:23:13-49
+28            android:theme="@style/AlivcRecordUIStyle" />
+28-->E:\a\MyApplication\AliyunRecorder\record\src\main\AndroidManifest.xml:24:13-54
+29        <activity
+29-->E:\a\MyApplication\AliyunRecorder\record\src\main\AndroidManifest.xml:25:9-26:52
+30            android:name="com.aliyun.svideo.recorder.activity.AlivcMixMediaActivity"
+30-->E:\a\MyApplication\AliyunRecorder\record\src\main\AndroidManifest.xml:25:19-91
+31            android:screenOrientation="portrait" />
+31-->E:\a\MyApplication\AliyunRecorder\record\src\main\AndroidManifest.xml:26:13-49
+32    </application>
+33
+34</manifest>

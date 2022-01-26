@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_15"
+    android:layout_marginEnd="@dimen/margin_15"
+    android:layout_marginBottom="@dimen/margin_5"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/notification_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:paddingBottom="@dimen/margin_20"
+        android:visibility="gone"
+        android:textSize="14sp"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <com.wookes.tac.custom.CircularImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/about"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:paddingTop="@dimen/margin_10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/margin_10"
+        android:paddingEnd="@dimen/margin_10">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="4sp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:paddingTop="@dimen/margin_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/content_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:contentDescription="@string/about"
+            android:scaleType="centerCrop" />
+
+        <Button
+            android:id="@+id/follow"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_corner_button_less"
+            android:text="@string/follow"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/unfollow"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_corner_button_less_unfollow"
+            android:backgroundTint="@android:color/white"
+            android:text="@string/unfollow"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>
+</LinearLayout>

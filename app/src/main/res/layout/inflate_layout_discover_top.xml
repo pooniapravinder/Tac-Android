@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wookes.tac.custom.RoundedCornerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="@dimen/margin_3"
+    app:layout_corner_radius="14">
+
+    <com.wookes.tac.custom.ContentViewFlipper
+        android:id="@+id/discover_view_flip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateFirstView="true"
+        android:autoStart="true"
+        android:background="@android:color/darker_gray"
+        android:flipInterval="3000"
+        android:orientation="horizontal" />
+</com.wookes.tac.custom.RoundedCornerLayout>

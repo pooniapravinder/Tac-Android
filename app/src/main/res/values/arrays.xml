@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="video_privacy">
+        <item>Public</item>
+        <item>Friends</item>
+        <item>Private</item>
+    </string-array>
+    <string-array name="video_privacy_description">
+        <item>Anyone on Wookes Tac</item>
+        <item>Followers that you follow back</item>
+        <item>Visible to me only</item>
+    </string-array>
+    <string-array name="video_privacy_icons">
+        <item>@drawable/icon_public</item>
+        <item>@drawable/icon_friends</item>
+        <item>@drawable/icon_private</item>
+    </string-array>
+    <string-array name="share_media_title">
+        <item>Whatsapp</item>
+        <item>Messenger</item>
+        <item>Twitter</item>
+        <item>Copy Link</item>
+        <item>Message</item>
+        <item>Snapchat</item>
+        <item>Instagram</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="share_media_icon">
+        <item>@drawable/icon_share_whatsapp</item>
+        <item>@drawable/icon_share_messenger</item>
+        <item>@drawable/icon_share_twitter</item>
+        <item>@drawable/icon_share_copy_link</item>
+        <item>@drawable/icon_share_text_message</item>
+        <item>@drawable/icon_share_snapchat</item>
+        <item>@drawable/icon_share_instagram</item>
+        <item>@drawable/icon_share_more</item>
+    </string-array>
+    <integer-array name="share_media_id">
+        <item>4001</item>
+        <item>4002</item>
+        <item>4003</item>
+        <item>4004</item>
+        <item>4005</item>
+        <item>4006</item>
+        <item>4007</item>
+        <item>4008</item>
+    </integer-array>
+    <string-array name="post_options_title">
+        <item>Save Video</item>
+        <item>Add to Favorites</item>
+        <item>Save Image</item>
+        <item>Delete</item>
+        <item>Report</item>
+        <item>Turn on Comments</item>
+        <item>Turn on Downloads</item>
+    </string-array>
+    <string-array name="post_options_icon">
+        <item>@drawable/icon_allow_downloads</item>
+        <item>@drawable/icon_saved_empty</item>
+        <item>@drawable/icon_allow_downloads</item>
+        <item>@drawable/icon_post_delete</item>
+        <item>@drawable/icon_post_report</item>
+        <item>@drawable/icon_disallow_comments</item>
+        <item>@drawable/icon_allow_downloads</item>
+    </string-array>
+    <integer-array name="post_options_id">
+        <item>5001</item>
+        <item>5002</item>
+        <item>5003</item>
+        <item>5004</item>
+        <item>5005</item>
+        <item>5006</item>
+        <item>5007</item>
+    </integer-array>
+    <string-array name="notification_filters">
+        <item>All</item>
+        <item>Likes</item>
+        <item>Comments</item>
+        <item>Mentions</item>
+        <item>Followers</item>
+        <item>From Tac</item>
+    </string-array>
+    <string-array name="notification_filters_icons">
+        <item>@drawable/icon_notifications</item>
+        <item>@drawable/icon_video_like_enable</item>
+        <item>@drawable/icon_allow_comments</item>
+        <item>@drawable/icon_mention</item>
+        <item>@drawable/icon_profile</item>
+        <item>@drawable/icon_notifications</item>
+    </string-array>
+</resources>

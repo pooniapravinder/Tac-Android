@@ -1,0 +1,115 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.aliyun.svideo.editor" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="16"
+6-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml
+7        android:targetSdkVersion="29" />
+7-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml
+8
+9    <uses-permission android:name="android.permission.INTERNET" />
+9-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:5:5-67
+9-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:5:22-64
+10    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+10-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:6:5-81
+10-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:6:22-78
+11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+11-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:7:5-80
+11-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:7:22-77
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:8:5-64
+12-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:8:22-62
+13    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+13-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:9:5-71
+13-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:9:22-68
+14
+15    <application>
+15-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:11:5-60:19
+16        <activity
+16-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:12:9-18:20
+17            android:name="com.aliyun.svideo.editor.editor.EditorActivity"
+17-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:13:13-74
+18            android:launchMode="singleTask"
+18-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:14:13-44
+19            android:screenOrientation="portrait"
+19-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:15:13-49
+20            android:theme="@style/AlivcEditUIStyle" >
+20-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:16:13-52
+21        </activity>
+22        <activity
+22-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:20:9-24:20
+23            android:name="com.aliyun.svideo.editor.EditorMediaActivity"
+23-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:21:13-72
+24            android:screenOrientation="portrait"
+24-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:23:13-49
+25            android:theme="@style/Theme.AppCompat.NoActionBar" >
+25-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:22:13-63
+26        </activity>
+27        <activity
+27-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:25:9-29:20
+28            android:name="com.aliyun.svideo.editor.effectmanager.EffectManagerActivity"
+28-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:26:13-88
+29            android:screenOrientation="portrait"
+29-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:27:13-49
+30            android:theme="@style/Theme.AppCompat.NoActionBar" >
+30-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:28:13-63
+31        </activity>
+32        <activity
+32-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:30:9-34:20
+33            android:name="com.aliyun.svideo.editor.effectmanager.MorePasterActivity"
+33-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:31:13-85
+34            android:screenOrientation="portrait"
+34-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:32:13-49
+35            android:theme="@style/Theme.AppCompat.NoActionBar" >
+35-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:33:13-63
+36        </activity>
+37        <activity
+37-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:35:9-39:20
+38            android:name="com.aliyun.svideo.editor.effectmanager.MoreCaptionActivity"
+38-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:36:13-86
+39            android:screenOrientation="portrait"
+39-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:37:13-49
+40            android:theme="@style/Theme.AppCompat.NoActionBar" >
+40-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:38:13-63
+41        </activity>
+42        <activity
+42-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:40:9-44:20
+43            android:name="com.aliyun.svideo.editor.effectmanager.MoreMVActivity"
+43-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:41:13-81
+44            android:screenOrientation="portrait"
+44-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:42:13-49
+45            android:theme="@style/Theme.AppCompat.NoActionBar" >
+45-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:43:13-63
+46        </activity>
+47        <activity
+47-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:45:9-49:20
+48            android:name="com.aliyun.svideo.editor.publish.PublishActivity"
+48-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:46:13-76
+49            android:screenOrientation="portrait"
+49-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:47:13-49
+50            android:theme="@style/Theme.AppCompat.NoActionBar" >
+50-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:48:13-63
+51        </activity>
+52        <activity
+52-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:50:9-54:20
+53            android:name="com.aliyun.svideo.editor.publish.CoverEditActivity"
+53-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:51:13-78
+54            android:screenOrientation="portrait"
+54-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:52:13-49
+55            android:theme="@style/Theme.AppCompat.NoActionBar" >
+55-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:53:13-63
+56        </activity>
+57        <activity
+57-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:55:9-59:65
+58            android:name="com.aliyun.svideo.editor.publish.UploadActivity"
+58-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:56:13-75
+59            android:hardwareAccelerated="true"
+59-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:57:13-47
+60            android:screenOrientation="portrait"
+60-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:58:13-49
+61            android:theme="@style/Theme.AppCompat.NoActionBar" />
+61-->E:\a\MyApplication\AliyunEditor\src\main\AndroidManifest.xml:59:13-63
+62    </application>
+63
+64</manifest>

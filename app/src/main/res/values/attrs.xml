@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HorizontalProgress">
+        <attr name="animationDuration" format="integer"/>
+        <attr name="gradientStartColor" format="color"/>
+        <attr name="gradientEndColor" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="RoundRectCornerImageView">
+        <attr name="corner_radius" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="RoundedCornerLayout">
+        <attr name="layout_corner_radius" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="CropOverlayView">
+        <attr name="guideLines" format="boolean" />
+        <attr name="drawCircle" format="boolean" />
+        <attr name="marginTop" format="dimension" />
+        <attr name="marginSide" format="dimension" />
+        <attr name="minWidth" format="dimension" />
+        <attr name="maxWidth" format="dimension" />
+        <attr name="cornerRadius" format="dimension" />
+        <attr name="borderColor" format="color" />
+        <attr name="overlayColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="TextViewMontserratLightText">
+        <attr name="lightTextColor" format="color" />
+    </declare-styleable>
+</resources>
